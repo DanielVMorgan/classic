@@ -27,7 +27,6 @@
 .classic-standard-button:active {
     background: black;
     color: white;
-    box-shadow: 1px 1px 0 #fff, -2px -2px 0 #404040;
     }    
 
 .classic-default-button {
@@ -73,7 +72,7 @@
     height: 22px;
     width: 100px;
     padding: 3px 12px;
-    box-shadow: -1px -1px 0 #fff, 1px 1px 0 #404040;
+    box-shadow: -1px -1px 0 #fff, 1px 1px 0 black;
     outline: none;
     cursor: pointer;
     user-select: none;
@@ -83,7 +82,7 @@
 .classic-roundrect-button:active {
     background: black;
     color: white;
-    box-shadow: 1px 1px 0 #fff, -1px -1px 0 #404040;
+    box-shadow: 1px 1px 0 #fff, -1px -1px 0 black;
     }    
 
 .classic-shadow-button {
@@ -96,7 +95,7 @@
     height: 22px;
     width: 100px;
     padding: 3px 12px;
-    box-shadow: -1px -1px 0 #fff, 1px 1px 0 #404040;
+    box-shadow: -1px -1px 0 #fff, 1px 1px 0 black;
     outline: none;
     cursor: pointer;
     user-select: none;
@@ -106,5 +105,5 @@
 .classic-shadow-button:active {
     background: black;
     color: white;
-    box-shadow: 1px 1px 0 #fff, -1px -1px 0 #404040;
+    box-shadow: 1px 1px 0 #fff, -1px -1px 0 black;
     }        
