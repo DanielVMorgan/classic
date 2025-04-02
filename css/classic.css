@@ -59,7 +59,7 @@
 
 .classic-default-button:active {
     background: black;
-    color: white;
+    color: red;
     border: 1px solid white;
     }    
 
