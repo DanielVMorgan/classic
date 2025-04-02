@@ -63,6 +63,10 @@
 
     }    
 
+.classic-default-button:active::after {
+    border-color: white;
+    }
+
 .classic-roundrect-button {
     font-family: 'Chicago', sans-serif;
     font-size: 12px;       
