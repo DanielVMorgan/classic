@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Chicago';
-    src: url('https://raw.githubusercontent.com/DanielVMorgan/hypercard-fonts/main/sysfont.woff2') format('woff2'),
-        url('https://raw.githubusercontent.com/DanielVMorgan/hypercard-fonts/main/sysfont.woff') format('woff'),
-        url('https://raw.githubusercontent.com/DanielVMorgan/hypercard-fonts/main/sysfont.ttf') format('truetype');
+    src: url('https://github.com/DanielVMorgan/classic/blob/main/fonts/sysfont.woff2') format('woff2'),
+        url('https://github.com/DanielVMorgan/classic/blob/main/fonts/sysfont.woff') format('woff'),
+        url('https://github.com/DanielVMorgan/classic/blob/main/fonts/sysfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
