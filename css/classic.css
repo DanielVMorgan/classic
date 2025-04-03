@@ -120,34 +120,40 @@ body {
     color: white;
 }
 
-.hypercard-window {
+/* .hypercard-window {
     width: 512px;
     height: 342px;
     border: 1px solid black;
     position: absolute;
     top: 50px;
     left: calc(50% - 256px);
-    /* Center horizontally */
     background: white;
     box-sizing: border-box;
+} */
+
+.hypercard-window {
+    width: calc(100% - 20px);
+    max-width: 512px;
+    height: 342px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    border: 1px solid black;
+    background: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-.hypercard-window-mobile {
-    width: 342px;
-    height: 512px;
-    border: 1px solid black;
-    position: absolute;
-    top: 50px;
-    left: calc(50% - 171px);
-    /* Center horizontally */
-    background: white;
-    box-sizing: border-box;
-}
+
 
 .title-bar {
-    height: 20px;
+    position: relative; /* ← This is key */
+    height: 22px;
     padding-top: 3px;
-    /* adjust as needed */
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -155,9 +161,11 @@ body {
     font-family: 'Chicago', sans-serif;
     font-weight: normal;
     background: white;
-    border-bottom: 0px solid black;
+    border-bottom: 1px solid black;
     cursor: pointer;
     user-select: none;
+    box-sizing: border-box;
+    flex: 0 0 auto;
 }
 
 .right-center-button {
