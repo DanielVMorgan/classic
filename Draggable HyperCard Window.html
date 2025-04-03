@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draggable HyperCard Window</title>
+    <link href="css/classic.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="hypercard-window" id="window">
+        <div class="title-bar" id="titleBar">
+            <div class="title-line-left"></div>
+            <div class="title-line-left"></div>
+            <div class="title-line-left"></div>
+            <div class="title-line-left"></div>
+            <div class="title-line-left"></div>
+
+            <div class="title-label">About Me: An Exercise in Futility</div>
+        </div>
+        <div class="content-area">
+            <!-- Your stack content -->
+            <button class="classic-default-button corner-button">I'm Okay</button></p>
+        </div>
+    </div>
+
+    <script>
+        const windowEl = document.getElementById('window');
+        const titleBar = document.getElementById('titleBar');
+
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        titleBar.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            const rect = windowEl.getBoundingClientRect();
+            offsetX = e.clientX - rect.left;
+            offsetY = e.clientY - rect.top;
+            document.body.style.cursor = 'pointer';
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            document.body.style.cursor = 'pointer';
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const x = e.clientX - offsetX;
+                const y = e.clientY - offsetY;
+                windowEl.style.left = `${x}px`;
+                windowEl.style.top = `${y}px`;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

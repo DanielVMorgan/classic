@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+    background: #eee;
+    height: 100vh;
+}
+
+
+
 @font-face {
     font-family: 'Chicago';
     src: url('https://raw.githubusercontent.com/DanielVMorgan/classic/main/fonts/sysfont.woff2') format('woff2'),
@@ -22,12 +30,12 @@
     cursor: pointer;
     user-select: none;
     display: inline-block;
-    }
+}
 
 .classic-standard-button:active {
     background: black;
     color: white;
-    }    
+}
 
 .classic-default-button {
     font-family: 'Chicago', sans-serif;
@@ -41,9 +49,9 @@
     border: 3px solid black;
     position: relative;
     cursor: pointer;
-    display: inline-block;    
+    display: inline-block;
     user-select: none;
-    }
+}
 
 .classic-default-button::after {
     content: '';
@@ -55,21 +63,21 @@
     border: 1px solid black;
     border-radius: 8px;
     pointer-events: none;
-    }
+}
 
 .classic-default-button:active {
     background: black;
     color: white;
 
-    }    
+}
 
 .classic-default-button:active::after {
     border-color: white;
-    }
+}
 
 .classic-roundrect-button {
     font-family: 'Chicago', sans-serif;
-    font-size: 12px;       
+    font-size: 12px;
     color: black;
     background: white;
     border: 1px solid black;
@@ -77,22 +85,21 @@
     height: 22px;
     width: 100px;
     padding: 3px 12px;
-    box-shadow: -1px -1px 0 #fff, 1px 1px 0 black;
+    box-shadow: 1px 1px 0 black;
     outline: none;
     cursor: pointer;
     user-select: none;
     display: inline-block;
-    }
+}
 
 .classic-roundrect-button:active {
     background: black;
     color: white;
-    box-shadow: 1px 1px 0 #fff, -1px -1px 0 black;
-    }    
+}
 
 .classic-shadow-button {
     font-family: 'Chicago', sans-serif;
-    font-size: 12px;       
+    font-size: 12px;
     color: black;
     background: white;
     border: 1px solid black;
@@ -100,15 +107,96 @@
     height: 22px;
     width: 100px;
     padding: 3px 12px;
-    box-shadow: -1px -1px 0 #fff, 1px 1px 0 black;
+    box-shadow: 1px 1px 0 black;
     outline: none;
     cursor: pointer;
     user-select: none;
     display: inline-block;
-    }    
+}
 
 .classic-shadow-button:active {
     background: black;
     color: white;
-    box-shadow: 1px 1px 0 #fff, -1px -1px 0 black;
-    }        
+}
+
+.hypercard-window {
+    width: 512px;
+    height: 342px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 256px);
+    /* Center horizontally */
+    background: white;
+    box-sizing: border-box;
+}
+
+.title-bar {
+    height: 20px;
+    padding-top: 3px;
+    /* adjust as needed */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Chicago', sans-serif;
+    font-weight: normal;
+    background: white;
+    border-bottom: 0px solid black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.corner-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+.title-label {
+    background: white;
+    padding: 0 8px;
+    z-index: 1;
+    position: relative;
+}
+
+.title-line-left {
+    position: absolute;
+    left: 3px;
+    width: 504px;
+    height: 1px;
+    background: #000000;
+}
+
+/* Position each line */
+.title-line-left:nth-of-type(1) {
+    top: 4px;
+}
+
+.title-line-left:nth-of-type(2) {
+    top: 7px;
+}
+
+.title-line-left:nth-of-type(3) {
+    top: 10px;
+}
+
+.title-line-left:nth-of-type(4) {
+    top: 13px;
+}
+
+.title-line-left:nth-of-type(5) {
+    top: 16px;
+}
+
+
+.content-area {
+    position: absolute;
+    top: 21px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 2px inset black;
+    background: white;
+    box-sizing: border-box;
+}
