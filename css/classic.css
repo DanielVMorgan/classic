@@ -132,6 +132,18 @@ body {
     box-sizing: border-box;
 }
 
+.hypercard-window-mobile {
+    width: 342px;
+    height: 512px;
+    border: 1px solid black;
+    position: absolute;
+    top: 400px;
+    left: calc(50% - 171px);
+    /* Center horizontally */
+    background: white;
+    box-sizing: border-box;
+}
+
 .title-bar {
     height: 20px;
     padding-top: 3px;
@@ -146,6 +158,20 @@ body {
     border-bottom: 0px solid black;
     cursor: pointer;
     user-select: none;
+}
+
+.right-center-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.left-center-button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
 }
 
 .lower-right-corner-button {
@@ -176,8 +202,8 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;        /* makes it a circle */
     overflow: hidden;          /* hides anything outside the bounds */
     object-fit: cover;         /* scales and crops to fill the circle */
@@ -190,32 +216,33 @@ body {
     position: relative;
 }
 
-.title-line-left {
+.titlebar-pinstripe {
     position: absolute;
-    left: 3px;
-    width: 504px;
+    left: 50%;
+    width: calc(100% - 8px);
     height: 1px;
     background: #000000;
+    transform: translateX(-50%);
 }
 
 /* Position each line */
-.title-line-left:nth-of-type(1) {
+.titlebar-pinstripe:nth-of-type(1) {
     top: 4px;
 }
 
-.title-line-left:nth-of-type(2) {
+.titlebar-pinstripe:nth-of-type(2) {
     top: 7px;
 }
 
-.title-line-left:nth-of-type(3) {
+.titlebar-pinstripe:nth-of-type(3) {
     top: 10px;
 }
 
-.title-line-left:nth-of-type(4) {
+.titlebar-pinstripe:nth-of-type(4) {
     top: 13px;
 }
 
-.title-line-left:nth-of-type(5) {
+.titlebar-pinstripe:nth-of-type(5) {
     top: 16px;
 }
 
