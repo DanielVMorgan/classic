@@ -176,8 +176,8 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;        /* makes it a circle */
     overflow: hidden;          /* hides anything outside the bounds */
     object-fit: cover;         /* scales and crops to fill the circle */
