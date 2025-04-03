@@ -2,6 +2,7 @@ body {
     margin: 0;
     background: #eee;
     height: 100vh;
+    
 }
 
 
@@ -149,9 +150,38 @@ body {
 
 .lower-right-corner-button {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     right: 10px;
 }
+
+.lower-left-corner-button {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+.upper-right-corner-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.upper-left-corner-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.round-cropped-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;        /* makes it a circle */
+    overflow: hidden;          /* hides anything outside the bounds */
+    object-fit: cover;         /* scales and crops to fill the circle */
+  }
 
 .title-label {
     background: white;
