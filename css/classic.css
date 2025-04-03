@@ -137,7 +137,7 @@ body {
     height: 512px;
     border: 1px solid black;
     position: absolute;
-    top: 400px;
+    top: 50px;
     left: calc(50% - 171px);
     /* Center horizontally */
     background: white;
